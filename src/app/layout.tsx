@@ -16,7 +16,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+        <div className="logo">My Website</div>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+        </header>
+        <main>
+          {children}
+        </main>
+        <footer>
+        <div>© 2022 My Website</div>
+        </footer>
+      </body>
     </html>
   );
 }
