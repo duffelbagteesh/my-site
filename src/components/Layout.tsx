@@ -16,6 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children, activeSection, onSectionClick
       <Head>
         <title>Leticia Fernandes</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
       <div className="lg:flex lg:justify-between lg:gap-4">
         <Header activeSection={activeSection} onSectionClick={onSectionClick} />
