@@ -12,12 +12,12 @@ type ProjectCardProps = {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, link, tech }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="glass-effect text-black p-6 rounded-lg shadow-lg flex">
-      <div className="mr-4">
+      <div className="glass-effect text-black p-6 rounded-lg shadow-lg flex flex-col sm:flex-row">
+      <div className="mb-4 sm:mr-4 sm:mb-0">
         <Image src={imageUrl} alt={title} width={750} height={48} className="object-cover rounded" />
       </div>
       <div>
-        <h3 className="text-md font-semibold">{title}</h3>
+        <h3 className="text-md font-semibold mb-2">{title}</h3>
         <p className="mt-2 text-sm leading-normal">{description}</p>
         <div className="mt-4">
             {tech.map((tech) => (

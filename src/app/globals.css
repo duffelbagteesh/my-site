@@ -15,6 +15,13 @@ body {
   100% {background-position: 0% 50%;}
 }
 
+/* Styles for tablets and larger devices */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 .glass-effect {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
