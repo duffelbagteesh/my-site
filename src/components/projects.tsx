@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 type ProjectCardProps = {
   title: string;
@@ -13,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div className="glass-effect text-black p-6 rounded-lg shadow-lg flex">
       <div className="mr-4">
-        <img src={imageUrl} alt={title} width="750" height="48" className="object-cover rounded" />
+        <Image src={imageUrl} alt={title} width={750} height={48} className="object-cover rounded" />
       </div>
       <div>
         <h3 className="text-md font-semibold">{title}</h3>

@@ -43,7 +43,7 @@ const Home = () => {
         }
       });
     };
-  }, []);
+  }, [sectionRefs]);
 
   return (
       <Layout activeSection={activeSection} onSectionClick={handleSectionClick}>
