@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionClick }) => {
       <section className="">
         <h1 className="font-bold font-roboto-slab">Leticia Fernandes</h1>
         <h2 className='subtitle'>Full-stack Developer</h2>
-        <p className="mb-2 mt-4 max-w-xs leading-normal">Empowering possibilities, one pixel at a time.</p>
+        <p className="mb-2 mt-4 max-w-xs leading-normal text-base">Empowering possibilities, one pixel at a time.</p>
       </section>
     </div>
   );
