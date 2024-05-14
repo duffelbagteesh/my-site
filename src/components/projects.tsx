@@ -14,7 +14,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div className="glass-effect text-black p-6 rounded-lg shadow-lg flex flex-col sm:flex-row">
       <div className="mb-4 sm:mr-4 sm:mb-0">
-        <Image src={imageUrl} alt={title} width={750} height={48} className="object-cover rounded" />
+        <Image src={imageUrl} 
+        alt={title} 
+        width={750} 
+        height={48} 
+        className="object-cover rounded"
+        loading="lazy" />
       </div>
       <div>
         <h3 className="text-md font-semibold mb-2">{title}</h3>
