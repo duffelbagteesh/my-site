@@ -18,8 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
         alt={title} 
         width={500} 
         height={48} 
-        className="object-cover rounded"
-        loading="lazy" />
+        className="object-cover rounded" />
       </div>
       <div>
         <h3 className="text-md font-semibold mb-2">{title}</h3>

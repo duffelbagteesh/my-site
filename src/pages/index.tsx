@@ -14,9 +14,12 @@ const Home = () => {
     projects: React.createRef<HTMLDivElement>(),
   };
   
-  const handleSectionClick = (section: string) => {
-    sectionRefs[section as keyof typeof sectionRefs].current?.scrollIntoView({ behavior: 'smooth' });
-  };
+const handleSectionClick = (sectionId: string) => {
+  const sectionElement = document.getElementById(sectionId);
+  if (sectionElement) {
+    sectionElement.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(
