@@ -3,6 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import Header from './header';
 import '../app/globals.css';
+import ParticleBackground from './ParticleBackground';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -12,6 +13,8 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children, activeSection, onSectionClick }) => {
   return (
+    <>
+    <ParticleBackground />
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
       <Head>
         <title>Leticia Fernandes</title>
@@ -30,6 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children, activeSection, onSectionClick
         </main>
       </div>
     </div>
+    </>
   );
 };
 
