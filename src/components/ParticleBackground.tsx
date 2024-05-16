@@ -28,6 +28,8 @@ const ParticleBackground: React.FC = () => {
       mouse.y = event.y;
     });
 
+    
+
     // Create particles
     for (let i = 0; i < numberOfParticles; i++) {
       particlesArray.push({
@@ -99,7 +101,9 @@ const ParticleBackground: React.FC = () => {
         position: 'fixed', 
         top: 0, 
         left: 0, 
-        zIndex: -1 
+        zIndex: -1,
+        width: '100%',
+        height:'100%'
       }} 
     />
   );
