@@ -28,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children, activeSection, onSectionClick
             {children}
           </section>
           <footer className='text-base'>
-        <p>Loosely designed and coded in VS Code by ya girl ✌️. Built with <a href='https://nextjs.org/' className="text-md font-semibold">Next.js</a> and <a href='https://tailwindcss.com/' className="text-md font-semibold">Tailwind CSS</a>, deployed with <a href='https://render.com/' className='text-md font-semibold'>Render</a>. Major texts in Roboto Slab and minor in Roboto typeface.</p>
+        <p>Loosely designed and coded in VS Code by ya girl ✌️. Built with <a href='https://nextjs.org/' className="text-md font-semibold">Next.js</a> and <a href='https://tailwindcss.com/' className="text-md font-semibold">Tailwind CSS</a>, deployed with <a href='https://vercel.com/' className='text-md font-semibold'>Vercel</a>. Major texts in Roboto Slab and minor in Roboto typeface.</p>
       </footer>
         </main>
       </div>
