@@ -16,11 +16,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
       <div className="mb-4 sm:mr-4 sm:mb-0">
         <Image src={imageUrl} 
         alt={title} 
-        width={500} 
-        height={48} 
+        width={120} 
+        height={300} 
         className="object-cover rounded" />
       </div>
-      <div>
+      <div className="w-4/5">
         <h3 className="text-md font-semibold mb-2">{title}</h3>
         <p className="mt-2 text-sm leading-normal">{description}</p>
         <div className="mt-4">
@@ -38,6 +38,22 @@ const Projects: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
       <h2 className="lg:hidden">Projects</h2>
+      <div>
+        <ProjectCard
+          title="DX Group, Hiring Maps"
+          description="UX Designer/Developer for a web application that visualizes the hiring opportunities across Connecticut."
+          imageUrl="/dxgroup-hiring-maps.png"
+          link="https://www.linkedin.com/posts/uconn-dx-group_were-excited-to-showcase-one-of-the-products-activity-7173038387845648384-vNzY/?utm_source=share&utm_medium=member_desktop" 
+          tech={["Vue.js", "Nuxt", "Collaboration", "Design"]} />
+      </div>
+      <div>
+        <ProjectCard
+          title="DX Group, Werth Institute"
+          description="UX Designer/Developer, full redesign and redevelopment of the website"
+          imageUrl="/dxgroup-werth.png"
+          link="https://www.linkedin.com/posts/uconn-dx-group_werestokedto-announce-our-recentlaunch-activity-7190811047555985409-Yi0r?utm_source=share&utm_medium=member_desktop" 
+          tech={["WordPress", "PHP", "Design", "Collaboration"]} />
+      </div>
       <div>
         <ProjectCard
           title="DeezerSpleeter"
