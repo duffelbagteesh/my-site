@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
           title="DX Group, Hiring Maps"
           description="UX Designer/Developer for a web application that visualizes the hiring opportunities across Connecticut."
           imageUrl="/dxgroup-hiring-maps.png"
-          link="https://www.linkedin.com/posts/uconn-dx-group_were-excited-to-showcase-one-of-the-products-activity-7173038387845648384-vNzY/?utm_source=share&utm_medium=member_desktop" 
+          link="https://hiring-maps-63410.web.app/" 
           tech={["Vue.js", "Nuxt", "Collaboration", "Design"]} />
       </div>
       <div>
