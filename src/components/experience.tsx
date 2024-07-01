@@ -40,14 +40,14 @@ const Experience: React.FC = () => {
       <div>
         <ExperienceCard
           title="Student Web Developer"
-          company="DX Group, Uconn"
+          company="DX Group, UConn"
           duration="May 2023 - May 2024"
           description="Designed and developed modern user-friendly websites for researchers across Uconn campuses. Collaborated with team members to gather requirements and ensure a responsive user-friendly interface."
           link="https://dxgroup.core.uconn.edu/"
         />
       </div>
   <div className='inline-flex ml-4'>
-  <a href="/Resume2.0.pdf" target="_blank" rel="noopener noreferrer" className='pl-2 hover:text-blue-500'>
+  <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className='pl-2 hover:text-blue-500'>
   <div className='flex'>
     View Full Resume
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-3 h-3 ml-2 mt-1 fill-current">
