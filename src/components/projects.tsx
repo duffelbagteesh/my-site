@@ -56,6 +56,14 @@ const Projects: React.FC = () => {
       </div>
       <div>
         <ProjectCard
+          title="DX Group, Wheatley Peters"
+          description="UX Designer/Developer, full redesign and redevelopment of a digital archive website for UConn's Humanities Department."
+          imageUrl="/wheatley-peters.png"
+          link="https://lyr.xn--lamh-bpa.org/cms/" 
+          tech={["Omeka", "PHP", "Design", "JavaScript"]} />
+      </div>
+      <div>
+        <ProjectCard
           title="DeezerSpleeter"
           description="Designed and implemented an audio isolating Flask application using Python deployed through a GitHub Workflows pipeline. Utilized Spleeter pre-trained models along with TensorFlow to split music tracks into their respective component parts."
           imageUrl="/DeezerSpleeter.png"
