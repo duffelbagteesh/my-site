@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
 type ProjectCardProps = {
   title: string;
@@ -8,6 +9,7 @@ type ProjectCardProps = {
   link: string;
   tech: string[];
 };
+const P5Sketch = dynamic(() => import('./P5Sketch'), { ssr: false });
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, link, tech }) => {
   return (
@@ -83,8 +85,11 @@ const Projects: React.FC = () => {
           title="CSS Showcase Midterm"
           description="This project displays how CSS properties have been utilized to bring colors to life, from hexadecimal codes to RGBA values. It embarks the user on a journey through the color spectrum, showcasing the power and evolution of CSS in web development."
           imageUrl="/css-showcase.png" 
-          link="https://github.uconn.edu/pages/lef16103/DMD3470/css-showcase-midterm/"
+          link="https://duffelbagteesh.github.io/colors-showcase/"
           tech={["React", "HTML & CSS"]} />
+      </div>
+      <div>
+        <P5Sketch />
       </div>
     </div>
   );
