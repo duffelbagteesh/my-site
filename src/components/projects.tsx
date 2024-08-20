@@ -88,9 +88,9 @@ const Projects: React.FC = () => {
           link="https://duffelbagteesh.github.io/colors-showcase/"
           tech={["React", "HTML & CSS"]} />
       </div>
-      <div>
+      {/* <div>
         <P5Sketch />
-      </div>
+      </div> */}
     </div>
   );
 };
