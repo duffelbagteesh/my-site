@@ -7,6 +7,7 @@ body {
   background-size: 600% 600%;
   animation: gradient 10s ease infinite;
   background-color: #B39BC8;
+  background-attachment: fixed;
 };
 
 

@@ -9,9 +9,13 @@ const ParticleBackground: React.FC = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size to cover the entire viewport
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
 
     let particlesArray: {x: number, y: number, size: number, speedX: number, speedY: number, distance: number}[] = [];
     const numberOfParticles = 100;
@@ -28,8 +32,6 @@ const ParticleBackground: React.FC = () => {
       mouse.y = event.y;
     });
 
-    
-
     // Create particles
     for (let i = 0; i < numberOfParticles; i++) {
       particlesArray.push({
@@ -41,7 +43,6 @@ const ParticleBackground: React.FC = () => {
         distance: 0,
       });
     }
-    
 
     const animateParticles = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -53,11 +54,10 @@ const ParticleBackground: React.FC = () => {
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
         ctx.globalAlpha = 0.5; // Set the opacity
         ctx.fillStyle = '#d3d3d3'; // Set the fill color
-  ctx.fill();
-  ctx.strokeStyle = '#d3d3d3'; // Set the stroke color
-  ctx.stroke();
-        ctx.closePath();
         ctx.fill();
+        ctx.strokeStyle = '#d3d3d3'; // Set the stroke color
+        ctx.stroke();
+        ctx.closePath();
 
         // Update particle properties
         particle.x += particle.speedX;
@@ -90,6 +90,7 @@ const ParticleBackground: React.FC = () => {
 
     // Clean up
     return () => {
+      window.removeEventListener('resize', resizeCanvas);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     };
   }, []);
@@ -108,4 +109,5 @@ const ParticleBackground: React.FC = () => {
     />
   );
 };
+
 export default ParticleBackground;
