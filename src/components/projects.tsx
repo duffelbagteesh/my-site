@@ -88,6 +88,14 @@ const Projects: React.FC = () => {
           link="https://duffelbagteesh.github.io/colors-showcase/"
           tech={["React", "HTML & CSS"]} />
       </div>
+      <div>
+        <ProjectCard
+          title="Travel Mate"
+          description="A travel companion that helps users browse, and discuss their trips by providing information about the weather, currency exchange rates, and COVID-19 statistics for their destination."
+          imageUrl="/travel-mate-logo.png" 
+          link="https://the-ting.onrender.com/"
+          tech={["Node.js", "Express", "SQL", "Nunjucks", "Auth0", "Security", "Authentication", "Collaboration" ]} />
+          </div>
       {/* <div>
         <P5Sketch />
       </div> */}
