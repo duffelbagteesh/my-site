@@ -10,7 +10,6 @@ type ProjectCardProps = {
   link: string;
   tech: string[];
 };
-const P5Sketch = dynamic(() => import('./P5Sketch'), { ssr: false });
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, link, tech }) => {
   return (
