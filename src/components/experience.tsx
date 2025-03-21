@@ -40,7 +40,7 @@ const Experience: React.FC = () => {
       <div>
         <ExperienceCard
           title="Student Web Developer"
-          company="DX Group, UConn"
+          company="Internal Insights & Innovation (I3), UConn"
           duration="May 2023 - May 2024"
           description="Designed and developed modern user-friendly websites for researchers across Uconn campuses. Collaborated with team members to gather requirements and ensure a responsive user-friendly interface."
           link="https://dxgroup.core.uconn.edu/"

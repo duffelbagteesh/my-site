@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
       <h2 className="lg:hidden">Projects</h2>
       <div>
         <ProjectCard
-          title="DX Group, Hiring Maps"
+          title="I3, Hiring Maps"
           description="UX Designer/Developer for a web application that visualizes the hiring opportunities across Connecticut."
           imageUrl="/dxgroup-hiring-maps.png"
           link="https://hiring-maps-63410.web.app/" 
@@ -50,19 +50,27 @@ const Projects: React.FC = () => {
       </div>
       <div>
         <ProjectCard
-          title="DX Group, Werth Institute"
-          description="UX Designer/Developer, full redesign and redevelopment of the website"
+          title="I3, Werth Institute"
+          description="Full redesign and development of UConn's Werth Institute website. Implemented web elements and user flows to streamline and promote access to mentorship, funding, and networking programs for students interested in entrepreneurship."
           imageUrl="/dxgroup-werth.png"
           link="https://www.linkedin.com/posts/uconn-dx-group_werestokedto-announce-our-recentlaunch-activity-7190811047555985409-Yi0r?utm_source=share&utm_medium=member_desktop" 
-          tech={["WordPress", "PHP", "Design", "Collaboration"]} />
+          tech={["WordPress", "PHP", "Design", "Collaboration", "Themes", "Pluggins", "WCAG"]} />
       </div>
       <div>
         <ProjectCard
-          title="DX Group, Wheatley Peters"
+          title="I3, Wheatley Peters"
           description="UX Designer/Developer, full redesign and redevelopment of a digital archive website for UConn's Humanities Department."
           imageUrl="/wheatley-peters.png"
           link="https://lyr.xn--lamh-bpa.org/cms/" 
           tech={["Omeka", "PHP", "Design", "JavaScript"]} />
+      </div>
+      <div>
+        <ProjectCard
+          title="UConn, ATION"
+          description="Worked alongside marketing and design teams to build a dynamic website that highlights student projects commmisioned by faculty, university departments, and local businesses."
+          imageUrl="/uconnation.png"
+          link="https://ation.dmd.uconn.edu/" 
+          tech={["WordPress", "Marketing", "Design", "Collaboration", "Strategy"]} />
       </div>
       <div>
         <ProjectCard
